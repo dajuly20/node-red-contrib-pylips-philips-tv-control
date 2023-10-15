@@ -1,13 +1,10 @@
 {
   "version": "1.0.0",
-  "name": "@dajuly20/node-red-contrib-pylips-philips-tv-control",
+  "name": "node-red-contrib-pylips-philips-tv-control",
   "author": "Julian Wiche <julian@wiche.eu>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/dajuly20"
   },
   "node-red": {
     "nodes": {
