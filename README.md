@@ -1,15 +1,25 @@
 # Node-red
-This is only a subflow, that speaks to the python script in pylips. So the rest of the readme is directly copied from there.
+This is only a subflow which then calls the python script in pylips. So the rest of the readme is directly copied from there.
 
 As for now, you will need to manually clone pylips into your home folder (~).
 Also for me the standart implementation did not work, this is why I forked the original and made some (for now quick an dirty) changes. 
 Mostly I replaced "https" by "http" and changed everything that was the "ssl" port  on ealrier models to use the same port as http.
 
+```
 cd ~
 git clone https://github.com/dajuly20/pylips/ #This will give you my changed version.
-
-- OR -
+# - OR -
 git clone https://github.com/eslavnov/pylips #This gives you the original version from https://github.com/eslavnov
+```
+
+Because you need to authorize you TV and enter it's IP / Hostname you will need to cd into the directory
+```
+cd pylips
+nano settings.ini #At least the IP / Hostname. 
+python3 pylips.py
+```
+When the authorization was successfull you can now use the node in nodered.
+
 
 Next steps: 
 Push the changes I made to pylips to the edge and make them parameterized.
