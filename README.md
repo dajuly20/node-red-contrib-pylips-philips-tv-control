@@ -24,7 +24,8 @@ When the authorization was successfull you can now use the node in nodered.
 The fist thing I wasted time with is making this UI - Remote, that has the most important buttons
 
 ![UI Remote](remote.png)
-[UI Remote](UI-Rempte.json) 
+
+[UI Remote](UI-Rempte.json) (To Download klick here)
 
 Next steps: 
 Push the changes I made to pylips to the edge and make them parameterized.
