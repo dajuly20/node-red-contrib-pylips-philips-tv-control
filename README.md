@@ -20,6 +20,10 @@ python3 pylips.py
 ```
 When the authorization was successfull you can now use the node in nodered.
 
+## UI Remote-control (basic functionality)
+The fist thing I wasted time with is making this UI - Remote, that has the most important buttons
+
+[UI Remote](UI-Rempte.json) 
 
 Next steps: 
 Push the changes I made to pylips to the edge and make them parameterized.
