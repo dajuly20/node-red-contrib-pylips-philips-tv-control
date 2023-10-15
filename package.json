@@ -1,8 +1,33 @@
 {
-    "name": "node-red-contrib-pylips-philips-tv-control",
-    "node-red": {
-        "nodes": {
-            "example-node": "pylips.js"
-        }
+  "version": "1.0.0",
+  "name": "@dajuly20/node-red-contrib-pylips-philips-tv-control",
+  "author": "Julian Wiche <julian@wiche.eu>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/dajuly0x23"
+  },
+  "node-red": {
+    "nodes": {
+      "example-node": "pylips.js"
     }
+  },
+  "description": "This is only a subflow which then calls the python script in pylips. So the rest of the readme is directly copied from there.",
+  "bugs": {
+    "url": "https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control/issues"
+  },
+  "homepage": "https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control#readme",
+  "main": "pylips.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Philips",
+    "tv",
+    "pylips",
+    "remote"
+  ],
+  "license": "ISC"
 }
