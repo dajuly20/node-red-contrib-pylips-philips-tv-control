@@ -1,0 +1,274 @@
+[
+    {
+        "id": "a118ce35c763dce8",
+        "type": "ui_button",
+        "z": "877c35247c154034",
+        "name": "",
+        "group": "f88dd54e901c1d95",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "⬆️",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "cursor_up",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 2740,
+        "wires": [
+            [
+                "aec79e0665813cf4"
+            ]
+        ]
+    },
+    {
+        "id": "13b3fed22e129dec",
+        "type": "ui_button",
+        "z": "877c35247c154034",
+        "name": "",
+        "group": "f88dd54e901c1d95",
+        "order": 10,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "🔽",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "cursor_down",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 2820,
+        "wires": [
+            [
+                "aec79e0665813cf4"
+            ]
+        ]
+    },
+    {
+        "id": "f9375d42fd3fc203",
+        "type": "ui_button",
+        "z": "877c35247c154034",
+        "name": "",
+        "group": "f88dd54e901c1d95",
+        "order": 5,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "◀️",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "cursor_left",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 2860,
+        "wires": [
+            [
+                "aec79e0665813cf4"
+            ]
+        ]
+    },
+    {
+        "id": "4d96796025533d98",
+        "type": "ui_button",
+        "z": "877c35247c154034",
+        "name": "",
+        "group": "f88dd54e901c1d95",
+        "order": 7,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "▶️",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "cursor_right",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 2940,
+        "wires": [
+            [
+                "aec79e0665813cf4"
+            ]
+        ]
+    },
+    {
+        "id": "a13dbd951e6df8a9",
+        "type": "ui_button",
+        "z": "877c35247c154034",
+        "name": "",
+        "group": "f88dd54e901c1d95",
+        "order": 6,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "🆗",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "confirm",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 2780,
+        "wires": [
+            [
+                "aec79e0665813cf4"
+            ]
+        ]
+    },
+    {
+        "id": "48bafe1b10b7c351",
+        "type": "ui_button",
+        "z": "877c35247c154034",
+        "name": "",
+        "group": "f88dd54e901c1d95",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "On",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "power_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 2700,
+        "wires": [
+            [
+                "aec79e0665813cf4"
+            ]
+        ]
+    },
+    {
+        "id": "3193888fe1e0f507",
+        "type": "ui_button",
+        "z": "877c35247c154034",
+        "name": "",
+        "group": "f88dd54e901c1d95",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "Off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "standby",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 2660,
+        "wires": [
+            [
+                "aec79e0665813cf4"
+            ]
+        ]
+    },
+    {
+        "id": "b56f940ba58e509f",
+        "type": "ui_button",
+        "z": "877c35247c154034",
+        "name": "",
+        "group": "f88dd54e901c1d95",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "🏠",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "home",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 2900,
+        "wires": [
+            [
+                "aec79e0665813cf4"
+            ]
+        ]
+    },
+    {
+        "id": "8e6b3e066725bf21",
+        "type": "ui_button",
+        "z": "877c35247c154034",
+        "name": "",
+        "group": "f88dd54e901c1d95",
+        "order": 9,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "🔙",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "back",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 2980,
+        "wires": [
+            [
+                "aec79e0665813cf4"
+            ]
+        ]
+    },
+    {
+        "id": "f88dd54e901c1d95",
+        "type": "ui_group",
+        "name": "Philips TV",
+        "tab": "63f1b735c3363aeb",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "63f1b735c3363aeb",
+        "type": "ui_tab",
+        "name": "JuliansCockpit",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
