@@ -7,7 +7,7 @@
     "url": "git+https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/dajuly0x23"
+    "registry": "https://npm.pkg.github.com/dajuly20"
   },
   "node-red": {
     "nodes": {
