@@ -7,7 +7,7 @@ Mostly I replaced "https" by "http" and changed everything that was the "ssl" po
 
 ```
 cd ~
-git clone https://github.com/dajuly20/pylips/ #This will give you my changed version.
+git clone https://github.com/dajuly20/pylips/ #This will give you my changed version (I have a 65PUS7607/12 from 2022)
 # - OR -
 git clone https://github.com/eslavnov/pylips #This gives you the original version from https://github.com/eslavnov
 ```
@@ -21,9 +21,9 @@ python3 pylips.py
 When the authorization was successfull you can now use the node in nodered.
 
 ## UI Remote-control (basic functionality)
-The fist thing I wasted time with is making this UI - Remote, that has the most important buttons
+The fist thing I wasted time with is making this UI - Remote, that has the most important buttons\
+![UI Remote](remote.png) \
 
-![UI Remote](remote.png)
 
 [UI Remote](UI-Rempte.json) (To Download klick here)
 
