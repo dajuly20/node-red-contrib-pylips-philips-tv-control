@@ -24,7 +24,8 @@
     "Philips",
     "tv",
     "pylips",
-    "remote"
+    "remote",
+    "node-red"
   ],
   "license": "ISC"
 }
