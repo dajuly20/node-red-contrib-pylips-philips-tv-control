@@ -1,0 +1,8 @@
+{
+    "name": "node-red-contrib-pylips-philips-tv-control",
+    "node-red": {
+        "nodes": {
+            "example-node": "pylips.js"
+        }
+    }
+}
