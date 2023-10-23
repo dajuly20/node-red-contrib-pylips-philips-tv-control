@@ -50,7 +50,7 @@
         ],
         "env": [
             {
-                "name": "IP / Hostname",
+                "name": "ip",
                 "type": "str",
                 "value": "192.168.178.XX"
             }
@@ -132,7 +132,7 @@
             "type": "function",
             "z": "d3e3e2834d4439c5",
             "name": "Concatenate \"ip\" environment variable",
-            "func": "msg.payload += \" --host \"+env.get(\"ip\");\nreturn msg;",
+            "func": "const ip=env.get(\"ip\"); if(ip =='192.168.178.XX'){node.error('Pylips Philips TV Hostname / IP not defined!');return null} msg.payload += \" --host \"+ip;\nreturn msg;",
             "outputs": 1,
             "timeout": 0,
             "noerr": 0,
