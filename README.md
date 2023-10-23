@@ -1,5 +1,5 @@
 # Node-red
-This is only a subflow which then calls the python script in pylips. So the rest of the readme is directly copied from there.
+This is only a subflow which then calls the python script in pylips. So the rest of the readme (and basically everything else, only not copied but used within the original repoo) is directly copied from [eslavnov/pylips](https://github.com/eslavnov/pylips) on whose great work this project builds on top of.
 
 As for now, you will need to manually clone pylips into your home folder (~).
 Also for me the standart implementation did not work, this is why I forked the original and made some (for now quick an dirty) changes. 
