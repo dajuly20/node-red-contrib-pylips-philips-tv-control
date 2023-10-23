@@ -1,9 +1,10 @@
 # Node-red
-This is only a subflow which then calls the python script in pylips. So the rest of the readme (and basically everything else, only not copied but used within the original repoo) is directly copied from [eslavnov/pylips](https://github.com/eslavnov/pylips) on whose great work this project builds on top of.
+This is NodeRed wrapper for the Python library [eslavnov/pylips](https://github.com/eslavnov/pylips). 
+So thanks to eslavnov's great work basically all there was to do is to copy the description over to here. 
 
-As for now, you will need to manually clone pylips into your home folder (~).
+As for now, you will need to manually clone pylips into your home folder (~). 
 Also for me the standart implementation did not work, this is why I forked the original and made some (for now quick an dirty) changes. 
-Mostly I replaced "https" by "http" and changed everything that was the "ssl" port  on ealrier models to use the same port as http.
+Mostly I replaced "https" by "http" and changed everything that was the "ssl" port on ealrier models to use the same port as http.
 
 ```
 cd ~
