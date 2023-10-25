@@ -7,10 +7,14 @@
     "url": "git+https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control.git"
   },
   "node-red": {
+    "version": ">=2.0.0",       
     "nodes": {
       "example-node": "pylips.js"
     }
   },
+  "engines": {
+     "node": ">=12.0.0"
+     },
   "description": "This is only a subflow which then calls the python script in pylips. So the rest of the readme is directly copied from there.",
   "bugs": {
     "url": "https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control/issues"
