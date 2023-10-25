@@ -26,7 +26,7 @@ The fist thing I wasted time with is making this UI - Remote, that has the most 
 ![UI Remote](remote.png) \
 
 
-[UI Remote](UI-Rempte.json) (To Download klick here)
+[UI Remote](examples/ui-remote.json) (To Download klick here)
 
 Next steps: 
 Push the changes I made to pylips to the edge and make them parameterized.
