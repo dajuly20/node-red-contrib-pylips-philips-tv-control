@@ -36,7 +36,7 @@
     "node-red"
   ],
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "napa": "^3.0.0"
   }
 }
