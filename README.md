@@ -70,6 +70,12 @@ Provided that you have python (version 3+) on your system, install all the depen
 pip3 install -r requirements.txt
 ```
 
+
+On a Linux system simply install with:
+```
+sudo apt-get install python3-pip
+```
+
 You may have to use `pip` and `python` instead of `pip3` and `python3` depending on how these tools are installed on your system.
 
 ## Setting up Pylips
