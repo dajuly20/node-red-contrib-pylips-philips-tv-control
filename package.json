@@ -7,14 +7,14 @@
     "url": "git+https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control.git"
   },
   "node-red": {
-    "version": ">=2.0.0",       
+    "version": ">=2.0.0",
     "nodes": {
       "example-node": "pylips.js"
     }
   },
   "engines": {
-     "node": ">=12.0.0"
-     },
+    "node": ">=12.0.0"
+  },
   "description": "This is only a subflow which then calls the python script in pylips. So the rest of the readme is directly copied from there.",
   "bugs": {
     "url": "https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control/issues"
@@ -22,7 +22,9 @@
   "homepage": "https://github.com/dajuly20/node-red-contrib-pylips-philips-tv-control#readme",
   "main": "pylips.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "napa git+https://github.com/dajuly20/pylips.git:pylips",
+    "postinstall": "pip3 install -r pylips/requirements.txt || echo \"Error! Seems like you are missing python3-pip. Please instsall! \""
   },
   "keywords": [
     "Philips",
@@ -31,5 +33,14 @@
     "remote",
     "node-red"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "napa": "^3.0.0"
+  },
+  "napa-config": {
+    "cache": false
+},
+  "dependencies": {
+    "napa": "^3.0.0"
+  }
 }
