@@ -2,9 +2,17 @@
 This is NodeRed wrapper for the Python library [eslavnov/pylips](https://github.com/eslavnov/pylips). 
 So thanks to eslavnov's great work basically all there was to do is to copy the description over to here. 
 
-As for now, you will need to manually clone pylips into your home folder (~). 
-Also for me the standart implementation did not work, this is why I forked the original and made some (for now quick an dirty) changes. 
-Mostly I replaced "https" by "http" and changed everything that was the "ssl" port on ealrier models to use the same port as http.
+the pylips repo is cloned (using napa). 
+If you need to call it diretly it's down the node_modules dir.
+For me this is ```~/.node-red/node-red-contrib-pylips-philips-tv-control/node_modules/pylips```
+(For windows this should be C:\Users\<Username\.node-red\node-red-contrib-pylips-philips-tv-control\node_modules\pylips )
+
+You need to have python3-pip installed.
+The step ```pip3 install -r pylips/requirements.txt``` should happen automatically but i couldnt test that yet!
+
+I have changed some things in pylips, to match with my newer Phillips TV.
+if you have an older one, you might have to clone the original repo and change the "Path" in the node accordingly.
+
 
 ```
 cd ~
@@ -13,7 +21,9 @@ git clone https://github.com/dajuly20/pylips/ #This will give you my changed ver
 git clone https://github.com/eslavnov/pylips #This gives you the original version from https://github.com/eslavnov
 ```
 
-Because you need to authorize you TV and enter it's IP / Hostname you will need to cd into the directory
+For authorisation you might need to call the python script manually.. 
+I will test if that also works directly in node-red.
+
 ```
 cd pylips
 nano settings.ini #At least the IP / Hostname. 
@@ -22,8 +32,8 @@ python3 pylips.py
 When the authorization was successfull you can now use the node in nodered.
 
 ## UI Remote-control (basic functionality)
-The fist thing I wasted time with is making this UI - Remote, that has the most important buttons\
-![UI Remote](remote.png) \
+This basic remote is shipped unter examples (you can use it directly in NodeRed using "import => examples" after installation.
+![UI Remote](remote.png) 
 
 
 [UI Remote](examples/ui-remote.json) (To Download klick here)
