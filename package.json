@@ -23,7 +23,8 @@
   "main": "pylips.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "napa git+https://github.com/dajuly20/pylips.git:pylips"
+    "install": "napa git+https://github.com/dajuly20/pylips.git:pylips",
+    "postinstall": "pip3 install -r pylips/requirements.txt || echo \"Error! Seems like you are missing python3-pip. Please instsall! \""
   },
   "keywords": [
     "Philips",
