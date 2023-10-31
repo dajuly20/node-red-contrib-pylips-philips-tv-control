@@ -1,0 +1,3 @@
+[submodule "pylips"]
+	path = pylips
+	url = https://github.com/dajuly20/pylips.git
