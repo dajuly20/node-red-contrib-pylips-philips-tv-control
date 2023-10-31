@@ -26,7 +26,7 @@
     "install": "napa"
   },
   "napa": {
-    "pylips": "https://github.com/dajuly20/pylips.git"
+    "pylips": "git+https://github.com/dajuly20/pylips.git"
   },
   "keywords": [
     "Philips",
