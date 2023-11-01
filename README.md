@@ -1,8 +1,13 @@
 # Node-red
-This is NodeRed wrapper for the Python library [eslavnov/pylips](https://github.com/eslavnov/pylips). 
-So thanks to eslavnov's great work basically all there was to do is to copy the description over to here. 
+This is NodeRed wrapper for the Python library [eslavnov/pylips](https://github.com/eslavnov/pylips) / [dajuly20/pylips](htts://github.com/dajuly20/pylips) (my fork for newer TV's) 
+Thanks to eslavnov for his great work! :-) 
 
-the pylips repo is cloned (using napa). 
+I now finally managed to clone the 'non-javascript' repo using 'napa' 
+Thogh once it's installed, you will have to open a command propt, CD in the direcpory and do two things:
+1) Open Command prompt (ssh into) and go to dir, thats specified in "path" of node
+   ![Path Screenshot](img/path.png)
+
+
 If you need to call it diretly it's down the node_modules dir.
 For me this is ```~/.node-red/node-red-contrib-pylips-philips-tv-control/node_modules/pylips```
 (For windows this should be C:\Users\<Username\.node-red\node-red-contrib-pylips-philips-tv-control\node_modules\pylips )
@@ -33,7 +38,7 @@ When the authorization was successfull you can now use the node in nodered.
 
 ## UI Remote-control (basic functionality)
 This basic remote is shipped unter examples (you can use it directly in NodeRed using "import => examples" after installation.
-![UI Remote](remote.png) 
+![UI Remote](img/remote.png) 
 
 
 [UI Remote](examples/ui-remote.json) (To Download klick here)
