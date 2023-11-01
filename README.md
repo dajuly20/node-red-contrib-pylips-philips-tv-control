@@ -1,8 +1,8 @@
 # Node-red
-This is NodeRed wrapper for the Python library [eslavnov/pylips](https://github.com/eslavnov/pylips) -- OR -- [dajuly20/pylips](https://github.com/dajuly20/pylips/) (my fork for newer TV's) 
+This is NodeRed wrapper for the Python library [eslavnov/pylips](https://github.com/eslavnov/pylips) -- OR -- [dajuly20/pylips](https://github.com/dajuly20/pylips/) (my fork for newer TV's)\
 Thanks to eslavnov for his great work! :-) 
 
-I now finally managed to clone the 'non-javascript' repo using 'napa' *yay* \
+Latest Update: pylips is now shipped & installed over `napa`
 
 # Api-Version 
 After lots of headaches: on MY Philips TV setting apiversion to 6  "--apiv 6" is **all you need** (no auth required)\
@@ -18,7 +18,7 @@ So because im lazy, I made apiv 6 the standart now.
 4) CD into path... in most cases this should be ```~/.node-red/node-red-contrib-pylips-philips-tv-control/node_modules/pylips/```
    ( For Windows "~" is %USERPROFILE% so =>  ```C:\Users\<username>\.node-red/node-red-contrib-pylips-philips-tv-control/node_modules/pylips/``` ) 
 5) Switch on your TV and find out its IP (you have to be on the same network of course
-6) execute: ```python3 --host <yourHostname/IP>```
+6) execute: ```python3 pylips.py --host <yourHostname/IP>```
 7) Your TV should show you a PIN code now, while the command prompt should say "Enter onscreen passcode:"
 8) Enter PIN Code shown on screen and hit return
 9) From NOW on you should be able to use the Node
