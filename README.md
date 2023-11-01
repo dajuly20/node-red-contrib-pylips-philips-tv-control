@@ -3,10 +3,17 @@ This is NodeRed wrapper for the Python library [eslavnov/pylips](https://github.
 Thanks to eslavnov for his great work! :-) 
 
 I now finally managed to clone the 'non-javascript' repo using 'napa' *yay* \
-**BUT** once node is  installed you **need** to **AUTH**enticate your **TV** once **before** you can **use** the Node
+
+# Api-Version 
+After lots of headaches: on MY Philips TV setting apiversion to 6  "--apiv 6" is **all you need** (no auth required)\
+So because im lazy, I made apiv 6 the standart now.
+
+# Troubleshooting
 1) Make sure **python3** and **pip** are installed  ```sudo apt-get install python3-pip``` (for Linux systems)
    Check with `pip --version` and `pythong3 --version`
-3)  Open Command prompt (ssh into) and go to dir, thats specified in "path" of node
+2) To **Authenticate**\
+   Open Command prompt (ssh into) and go to dir, thats specified in "path" of node\
+   (or clone [pylips](https://github.com/dajuly20/pylips/) again somewhere else and copy `settings.ini` when eveything works)
    ![Path Screenshot](img/path.png)
 4) CD into path... in most cases this should be ```~/.node-red/node-red-contrib-pylips-philips-tv-control/node_modules/pylips/```
    ( For Windows "~" is %USERPROFILE% so =>  ```C:\Users\<username>\.node-red/node-red-contrib-pylips-philips-tv-control/node_modules/pylips/``` ) 
