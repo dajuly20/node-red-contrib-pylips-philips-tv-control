@@ -1,28 +1,37 @@
 # Node-red
-This is NodeRed wrapper for the Python library [eslavnov/pylips](https://github.com/eslavnov/pylips) / [dajuly20/pylips](htts://github.com/dajuly20/pylips) (my fork for newer TV's) 
+This is NodeRed wrapper for the Python library [eslavnov/pylips](https://github.com/eslavnov/pylips) -- OR -- [dajuly20/pylips](https://github.com/dajuly20/pylips/) (my fork for newer TV's) 
 Thanks to eslavnov for his great work! :-) 
 
-I now finally managed to clone the 'non-javascript' repo using 'napa' 
-Thogh once it's installed, you will have to open a command propt, CD in the direcpory and do two things:
-1) Open Command prompt (ssh into) and go to dir, thats specified in "path" of node
+I now finally managed to clone the 'non-javascript' repo using 'napa' *yay* \
+**BUT** once node is  installed you **need** to **AUTH**enticate your **TV** once **before** you can **use** the Node
+1) Make sure **python3** and **pip** are installed  ```sudo apt-get install python3-pip``` (for Linux systems)
+   Check with `pip --version` and `pythong3 --version`
+3)  Open Command prompt (ssh into) and go to dir, thats specified in "path" of node
    ![Path Screenshot](img/path.png)
+4) CD into path... in most cases this should be ```~/.node-red/node-red-contrib-pylips-philips-tv-control/node_modules/pylips/```
+   ( For Windows "~" is %USERPROFILE% so =>  ```C:\Users\<username>\.node-red/node-red-contrib-pylips-philips-tv-control/node_modules/pylips/``` ) 
+5) Switch on your TV and find out its IP (you have to be on the same network of course
+6) execute: ```python3 --host <yourHostname/IP>```
+7) Your TV should show you a PIN code now, while the command prompt should say "Enter onscreen passcode:"
+8) Enter PIN Code shown on screen and hit return
+9) From NOW on you should be able to use the Node
+10) **when it does NOT work** make sure the settings.ini file does NOT specify user & password / or delete definition if it is specified!
+11) **also** `pip3 install -r requirements.txt` should have already ran... maybe run it again 
+
+   **TODO: Somehow include the Auth-process into Node-Red**
 
 
-If you need to call it diretly it's down the node_modules dir.
-For me this is ```~/.node-red/node-red-contrib-pylips-philips-tv-control/node_modules/pylips```
-(For windows this should be C:\Users\<Username\.node-red\node-red-contrib-pylips-philips-tv-control\node_modules\pylips )
-
-You need to have python3-pip installed.
-The step ```pip3 install -r pylips/requirements.txt``` should happen automatically but i couldnt test that yet!
-
-I have changed some things in pylips, to match with my newer Phillips TV.
+## Changes on pylips 
+I made some changes to the original pylips - so it does work with my 2022 TV 
 if you have an older one, you might have to clone the original repo and change the "Path" in the node accordingly.
+In the future I will make the this new/old into a switch... lets's see... maybe this can even be automated by in the first "read out TV specs" process...  
 
 
+[eslavnov/pylips](https://github.com/eslavnov/pylips) (older TV's) -- OR -- [dajuly20/pylips](https://github.com/dajuly20/pylips/)  (used as standart for now)
+
+If standart pylips doesen't work try cloning this (for older TV's) and set PATH in node accordingly!
 ```
 cd ~
-git clone https://github.com/dajuly20/pylips/ #This will give you my changed version (I have a 65PUS7607/12 from 2022)
-# - OR -
 git clone https://github.com/eslavnov/pylips #This gives you the original version from https://github.com/eslavnov
 ```
 
